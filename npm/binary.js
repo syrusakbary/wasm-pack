@@ -17,7 +17,7 @@ const getPlatform = () => {
     return "x86_64-apple-darwin";
   }
   if (type === "Darwin" && (arch === "aarch64" || arch === "arm64")) {
-    return "arm64-apple-darwin";
+    return "x86_64-apple-darwin";
   }
 
   throw new Error(`Unsupported platform: ${type} ${arch}`);
